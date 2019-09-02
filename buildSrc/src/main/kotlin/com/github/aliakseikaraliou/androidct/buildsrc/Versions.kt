@@ -21,6 +21,11 @@ object AndroidSdk {
     const val APPLICATION_ID = "com.github.aliakseikaraliou.androidct"
 }
 
+object Dagger {
+    const val DEPENDENCY = "com.google.dagger:dagger:${Versions.DAGGER}"
+    const val KAPT = "com.google.dagger:dagger:${Versions.DAGGER}"
+}
+
 object Gradle {
     const val CLASSPATH = "com.android.tools.build:gradle:${Versions.ANDROID_GRADLE}"
 }
@@ -30,13 +35,14 @@ object Kotlin {
     const val DEPENDENCY = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.KOTLIN_VERSION}"
 }
 
-object Dagger {
-    const val DEPENDENCY = "com.google.dagger:dagger:${Versions.DAGGER}"
-    const val KAPT = "com.google.dagger:dagger:${Versions.DAGGER}"
+
+object Retrofit {
+    const val DEPENDENCY = "com.squareup.retrofit2:retrofit:${Versions.RETROFIT}"
 }
 
 
 private object Versions {
+
     const val ANDROID_GRADLE = "3.5.0"
 
     const val ANDROIDX = "1.1.0-rc01"
@@ -48,4 +54,5 @@ private object Versions {
     const val KOTLIN_VERSION = "1.3.41"
 
     const val DAGGER = "2.24"
+    const val RETROFIT = "2.6.1"
 }
